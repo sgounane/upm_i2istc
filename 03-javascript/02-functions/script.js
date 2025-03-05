@@ -23,4 +23,14 @@ function fact(n){
     return n*fact(n-1)
 }
 c=fact(4)
+
+function stars(n){
+    if(n==0) return 1
+    str=""
+    for(let i=0;i<n;i++) str+="*";
+    console.log(str)
+    stars(n-1) 
+    console.log(str)
+}
+stars(5)
 console.log("Final c: ",c)
