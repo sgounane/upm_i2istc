@@ -1,0 +1,28 @@
+div{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: orange;
+    display: inline-block;
+}
+
+#div1{
+    transform: translate(-100px,100px);
+}
+
+#div2{
+    transform: rotate(60deg);
+}
+
+#div3{
+    transform: scaleX(1.5);
+}
+
+#div4{
+    transform: skewX(-10deg)
+}
+
+#div5{
+    transform: skewY(-10deg)
+}

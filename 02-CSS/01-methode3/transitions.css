@@ -1,0 +1,35 @@
+.transition{
+    width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    transition: background-color 10s, padding 10s;
+}
+
+.transition:hover{
+    background-color: orange;
+    padding: 100px;
+}
+
+@keyframes myanim {
+    from{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+    to{
+        width: 200px;
+        height: 200px;
+        transform: skew(10deg);
+        background-color: orange;
+    }
+}
+
+.animated{
+    width: 200px;
+        height: 200px;
+        transform: skew(10deg);
+        background-color: orange;
+    animation-name: myanim;
+    animation-duration: 10s;
+}

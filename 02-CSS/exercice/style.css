@@ -1,0 +1,61 @@
+div{
+    border: 1px solid green;
+}
+body{
+    margin: auto;
+}
+.robot{
+    margin: auto;
+    width: fit-content
+}
+.body{
+    width: 80px;
+}
+.dtop{
+    margin:auto;
+    width: 80px;
+}
+.dtop, .lhand, .body, .rhand, .rleg, .lleg{
+    background-color: green;
+    border-radius: 10px;
+} 
+.lhand, .rhand, .rleg, .lleg{
+    width: 40px;
+    height: 100px;
+}
+.leye, .reye{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+.dcenter, .dtop, .dbottom{
+    display: flex;
+}
+.dbottom{
+    position: relative;
+    justify-content: space-around;
+}
+.lleg{
+    position: absolute;
+    left: 40px;
+}
+.rleg{
+    position: absolute;
+    right: 40px;
+}
+.dtop{
+    position: relative;
+    height: 40px;
+    border-radius: 40px 40px 0px 0px;
+}
+.leye{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.reye{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
