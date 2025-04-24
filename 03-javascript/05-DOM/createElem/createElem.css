@@ -1,0 +1,14 @@
+#root{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.cube{
+    width: 50px;
+    padding: 10px;
+    background-color:red;
+    font-size: 28px;
+
+    margin: 2px;
+}

@@ -1,0 +1,21 @@
+div{
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+}
+.inner{
+    position:absolute;
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    
+}
+
+.outer{
+    position: relative;
+    width: 400px;
+    height: 400px;
+   
+}
