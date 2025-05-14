@@ -21,12 +21,20 @@ function updateTodos(data){
     let items=[]
     
     data.forEach(e => {
-        let user=React.createElement("div",{className:"user"},e.userId)
-        let todo=React.createElement("div",{className:"todo"},e.todo)
-        let completed=React.createElement("input",{type:"checkbox"},"")
-        let div=React.createElement("div",{className:"item"},user,todo,completed)
+        //let user=React.createElement("div",{className:"user"},e.userId)
+        //let todo=React.createElement("div",{className:"todo"},e.todo)
+        //let completed=React.createElement("input",{type:"checkbox"},"")
+       // let div=React.createElement("div",{className:"item"},user,todo,completed)
+        let div=(<div className="item">
+            <div className="user">{e.userId}</div>
+            <div className="todo">{e.todo}</div>
+            <input type="checkbox" checked={e.completed}></input>
+        </div>)
         items.push(div)
     });
-    let app=React.createElement("div",null,items)
+    //let app=React.createElement("div",null,items)
+    let app=(<div >
+        {items}
+    </div>)
     ReactDOM.render(app,root)
 }
