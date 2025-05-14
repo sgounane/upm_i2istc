@@ -1,0 +1,16 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+   
+
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.user{
+    width: 100px;
+}
+
+input{
+    float: right;
+}
